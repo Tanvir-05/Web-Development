@@ -1,0 +1,14 @@
+{
+  "name": "campusnova",
+  "version": "1.0.0",
+  "description": "CampusNova — Student Collaboration Hub. A desktop prototype built with Electron, HTML, CSS, and JavaScript.",
+  "main": "main.js",
+  "scripts": {
+    "start": "node node_modules/electron/cli.js ."
+  },
+  "author": "CampusNova Team",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^35.0.0"
+  }
+}

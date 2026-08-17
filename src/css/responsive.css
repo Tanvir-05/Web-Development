@@ -1,0 +1,184 @@
+/* ========================================
+   Responsive Design — CampusNova
+   ======================================== */
+
+/* ---- Laptop (< 1200px) ---- */
+@media (max-width: 1200px) {
+  .dashboard-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .task-board {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .admin-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .system-status-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .profile-sections {
+    grid-template-columns: 1fr;
+  }
+
+  .content-grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ---- Tablet / Smaller Window (< 900px) ---- */
+@media (max-width: 900px) {
+  .sidebar {
+    transform: translateX(-100%);
+    box-shadow: var(--shadow-xl);
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .main-wrapper {
+    margin-left: 0;
+  }
+
+  .header-menu-btn {
+    display: flex;
+  }
+
+  .messages-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .conversations-panel {
+    display: none;
+  }
+
+  .conversations-panel.show {
+    display: flex;
+    position: absolute;
+    width: 300px;
+    height: 100%;
+    z-index: 10;
+    background: var(--surface);
+  }
+
+  .teams-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .task-board {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .search-result-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search-result-actions {
+    width: 100%;
+  }
+
+  .content-grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-header-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-meta {
+    justify-content: center;
+  }
+}
+
+/* ---- Small Window (< 640px) ---- */
+@media (max-width: 640px) {
+  .main-content {
+    padding: var(--space-4);
+  }
+
+  .header {
+    padding: 0 var(--space-4);
+  }
+
+  .dashboard-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .task-board {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .system-status-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .content-grid-2,
+  .content-grid-3,
+  .content-grid-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .page-header-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .resources-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .data-table {
+    display: block;
+    overflow-x: auto;
+  }
+
+  .header-user-info {
+    display: none;
+  }
+
+  .team-detail-meta {
+    flex-wrap: wrap;
+    gap: var(--space-3);
+  }
+
+  .modal {
+    margin: var(--space-4);
+  }
+
+  .auth-card {
+    padding: var(--space-5);
+  }
+}
+
+/* ---- Sidebar overlay background ---- */
+.sidebar-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: calc(var(--z-sidebar) - 1);
+}
+
+@media (max-width: 900px) {
+  .sidebar-overlay.show {
+    display: block;
+  }
+}
