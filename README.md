@@ -33,7 +33,7 @@ A desktop prototype demonstrating a centralized student collaboration platform f
 
 | Role | Name | Email | Password |
 |------|------|-------|----------|
-| Student | Mehadi Hasan Proman | proman@diu.edu.bd | 123456 |
+| Student | Md Kaida Azam Bhuiyan Tanvir | kaida242-35-212@diu.edu.bd | 123456 |
 | Admin / Faculty | Dr. Kamrul Islam Shahin | shahin@diu.edu.bd | admin123 |
 
 You can also use the **"Continue as Demo Student"** or **"Continue as Admin"** buttons on the login screen.
